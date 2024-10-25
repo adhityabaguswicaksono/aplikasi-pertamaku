@@ -1,0 +1,17 @@
+# Nama: Adhitya Bagus Wicaksono
+# NIM: 00000048211
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: express_backend
+    ports:
+      - '3000:3000'
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: vite_frontend
+    ports:
+      - '443:443'
