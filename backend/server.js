@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(
 	cors({
-		origin: '*',
+		origin: 'http://20.3.240.51',
 		optionsSuccessStatus: 200,
 	})
 );
