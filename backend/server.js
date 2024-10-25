@@ -87,6 +87,6 @@ app.get(
 	}
 );
 
-app.listen(3000, () => {
+app.listen(3000, '20.3.240.51', () => {
 	console.log('Server running on port 3000');
 });
