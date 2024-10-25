@@ -8,19 +8,22 @@
 
 	const getUser = async () => {
 		const response = await fetch(
-			`http://localhost:3000/api/user/${userId.value}`
+			`http://20.3.240.51:3000/api/user/${userId.value}`
 		);
 		users.value = await response.json();
 	};
 
 	const changeEmail = async () => {
-		await fetch(`http://localhost:3000/api/user/${userId.value}/change-email`, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json', // Menggunakan JSON
-			},
-			body: JSON.stringify({ email: newEmail.value }), // Mengirim data dalam format JSON
-		});
+		await fetch(
+			`http://20.3.240.51:3000/api/user/${userId.value}/change-email`,
+			{
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json', // Menggunakan JSON
+				},
+				body: JSON.stringify({ email: newEmail.value }), // Mengirim data dalam format JSON
+			}
+		);
 	};
 </script>
 

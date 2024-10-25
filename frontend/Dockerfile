@@ -17,7 +17,7 @@ RUN npm install
 COPY . .
 
 # Expose port yang digunakan oleh Vite (default 5173)
-EXPOSE 443
+EXPOSE 80
 
 # Jalankan server development Vite pada port 5173
-CMD ["npm", "run", "dev", "--", "--port", "443", "--host"]
+CMD ["npm", "run", "dev", "--", "--port", "80", "--host"]
